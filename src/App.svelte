@@ -7,7 +7,19 @@
 		
 		const ctx = canvas.getContext('2d')
 		
-		ctx.fillRect(100, 100, 400, 20)
+		let positionX = 100
+		
+		for( let i = 1; i<10; i++ ) {
+			let x = positionX
+			let y = 20 * i * i / 5
+			let width = 50 * i
+			let positionY = i * 4
+
+			ctx.fillRect(x, y, width, positionY)
+
+		}
+		
+		
 
 	})
 
